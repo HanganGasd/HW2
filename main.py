@@ -26,7 +26,7 @@ def predict_age(face_img: np.ndarray) -> int:
     추론 로직을 연동합니다.
     """
     # TODO: 실제 AI 모델의 model.predict() 로 교체 필요
-    # 현재는 얼굴 크기나 픽셀 값에 기반한 가상의 나이를 리턴하도록 모킹해두었습니다.
+    # 현재는 얼굴 크기나 픽셀 값에 기반한 가상의 나이를 리턴하도록 모킹해두었습니다.x
     pseudo_random_age = int(np.mean(face_img) % 40) + 15
     return pseudo_random_age
 
